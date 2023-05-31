@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 from utils.locators import *
 
-class MainPage(BasePage):
+class HomePage(BasePage):
     def __init__(self, driver):
         self.locator = MainPageLocators
         super().__init__(driver)

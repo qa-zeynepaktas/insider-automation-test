@@ -11,11 +11,13 @@ class QAJobsPage(BasePage):
 
     def filter_jobs(self, location, department):
         time.sleep(1)
-        location_filter = self.driver.find_element(By.XPATH, f"//select[@name='filter-by-location']/option[text()='{location}']")
+        location_filter = self.driver.find_element(By.XPATH,
+                                                   f"//select[@name='filter-by-location']/option[text()='{location}']")
         time.sleep(1)
         location_filter.click()
 
-        department_filter = self.driver.find_element(By.XPATH, f"//select[@name='filter-by-department']/option[text()='{department}']")
+        department_filter = self.driver.find_element(By.XPATH,
+                                                     f"//select[@name='filter-by-department']/option[text()='{department}']")
         time.sleep(1)
         department_filter.click()
         time.sleep(1)
